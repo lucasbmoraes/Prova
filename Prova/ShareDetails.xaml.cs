@@ -26,12 +26,13 @@ public partial class ShareDetails : ContentPage
 
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                Logotipo.Source = acao.Logourl;
                 ShortName.Text = $"Ação = {acao.ShortName}";
                 LongName.Text = $"Empresa = {acao.LongName}";
                 Marketcap.Text = $"Capitalização de mercado = R${acao.MarketCap}";
                 Value.Text = $"Valor atual = R${(acao.RegularMarketPrice)}";
                 RegularMarketChange.Text = $"Variação do dia = R${(acao.RegularMarketChange)}";
+                RegularMarketOpen.Text = $"Abertura do dia no mercado= R${(acao.RegularMarketOpen)}";
+
             });
         }
         catch (Exception ex)

@@ -4,11 +4,6 @@
              x:Class="Prova.ShareDetails"
              Title="Detalhes da Ação">
     <VerticalStackLayout>
-        <Image
-            x:Name="Logotipo"
-            HeightRequest="185"
-            Aspect="AspectFit"
-            SemanticProperties.Description="dot net bot in a race car number eight" />
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -27,6 +22,8 @@
             <Label Grid.Row="2" Grid.Column="0"  x:Name="Marketcap"></Label>
             <Label Grid.Row="3" Grid.Column="0"  x:Name="Value"></Label>
             <Label Grid.Row="4" Grid.Column="0"  x:Name="RegularMarketChange"></Label>
+            <Label Grid.Row="5" Grid.Column="0"  x:Name="RegularMarketOpen"></Label>
+
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
