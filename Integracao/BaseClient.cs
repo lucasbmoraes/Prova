@@ -3,7 +3,7 @@
     public class BaseClient
     {
         static readonly HttpClient _client = new HttpClient();
-        string _baseUrl = "https://rvh98qbf-44321.brs.devtunnels.ms/";
+        string _baseUrl = "https://ptg4shc8-7029.brs.devtunnels.ms/";
         
         public async Task<HttpResponseMessage> GetShare(string shareSymbol)
         {
